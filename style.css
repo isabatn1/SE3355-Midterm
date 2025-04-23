@@ -1,0 +1,250 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.navbar {
+  top: 0;
+  background-color: #333;
+  position: sticky;
+  width: 100vw;
+  z-index: 999;
+}
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu li a {
+  display: block;
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu li a:hover {
+  background-color: #444;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #555;
+  min-width: 160px;
+  z-index: 999;
+  top: 100%;
+  left: 0;
+}
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.finance-info-bar {
+  background-color: #222;
+  color: #fff;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.main-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 30px 20px;
+}
+
+.left-half {
+  flex: 1;
+  max-width: 600px;
+  min-width: 300px;
+}
+
+.right-half {
+  flex: 1;
+  min-width: 250px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.featured-news-box {
+  background-color: #fff8e1;
+  padding: 15px;
+  border: 2px solid #ffc107;
+  text-align: left;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+.news-wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.news-box {
+  flex-grow: 1;
+  border: 1px solid #ccc;
+  padding: 30px;
+  background-color: #f9f9f9;
+  min-height: 425px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow-btn {
+  
+  height: 100%;
+  font-size: 24px;
+  border: none;
+  width: 40px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.arrow-btn:hover {
+  background-color: #eee;
+}
+
+.weather-container-small {
+  background-color: #f0f8ff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.weather-cards.small {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+}
+
+.weather-cards.small .weather-card {
+  padding: 8px;
+  width: 90px;
+  font-size: 12px;
+  background-color: #e0f7fa;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.ad {
+  top: 100px;
+  position: fixed;
+  width: 180px;
+  z-index: 100;
+}
+
+.ad img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid #aaa;
+}
+
+.ad.left {
+  left: 10px;
+}
+
+.ad.right {
+  right: 10px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 2px 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.news-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+.news-content img {
+  max-width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.news-content h4 {
+  margin-top: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.news-visual-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.news-visual-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 6px;
+}
+
+.news-title-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6); 
+  color: white;
+  text-align: center;
+  padding: 12px 10px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 0 0 6px 6px;
+}
+.news-box {
+  flex-grow: 1;
+  padding: 0; 
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  min-height: 485px;  
+  height: 400px;     
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+

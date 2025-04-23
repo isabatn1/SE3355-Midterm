@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Haber Portalı</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="navbar">
+    <ul class="menu">
+      <li><a href="#">Anasayfa</a></li>
+      <li class="dropdown">
+        <a href="#">Dünya</a>
+        <div class="dropdown-content">
+          <a href="#">Siyaset</a>
+          <a href="#">Kültür</a>
+          <a href="#">Savaş</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="#">Finans</a>
+        <div class="dropdown-content">
+          <a href="#">Borsa</a>
+          <a href="#">Kripto</a>
+          <a href="#">Döviz</a>
+        </div>
+      </li>
+      <li><a href="#">Spor</a></li>
+      <li><a href="#">Sanat</a></li>
+      <li><a href="#">Eğitim</a></li>
+      <li><a href="#">Son Dakika</a></li>
+    </ul>
+  </div>
+  <div id="financeInfoBar" class="finance-info-bar"></div>
+
+  <div id="leftAd" class="ad left">
+    <a href="https://www.lacoste.com/" target="_blank">
+      <img src="https://r.resimlink.com/vzVeIJR.png" alt="Reklam Sol">
+    </a>
+    <button class="close-btn" onclick="closeAd('leftAd')">X</button>
+  </div>
+
+  <div id="rightAd" class="ad right">
+    <a href="https://www.lacoste.com/" target="_blank">
+      <img src="https://r.resimlink.com/vzVeIJR.png" alt="Reklam Sağ">
+    </a>
+    <button class="close-btn" onclick="closeAd('rightAd')">X</button>
+  </div>
+
+  <div class="main-row">
+
+    <div class="left-half">
+      <div class="news-wrapper">
+        <button class="arrow-btn" onclick="prevNews()">⬅️</button>
+        <div class="news-box" id="newsBox"></div>
+        <button class="arrow-btn" onclick="nextNews()">➡️</button>
+      </div>
+    </div>
+
+    <div class="right-half">
+      <div class="featured-news-box">
+        <h3>Öne Çıkan Haber</h3>
+        <p>İstanbul'da kar yağışı etkili olacak, valilik uyarıda bulundu.</p>
+      </div>
+
+      <div class="weather-container-small">
+        <h4>5 Günlük Hava</h4>
+        <div id="weatherCards" class="weather-cards small"></div>
+      </div>
+    </div>
+  </div>
+  <div style="height: 2000px;"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
